@@ -330,7 +330,7 @@ if ($input -eq "FLAG{w0w_7h3_3mb3dd3d_vb4_1n_w0rd_4u70m471c4lly_3x3cu73d_7h3_p0w
 }
 ```
 
-## ltrace
+### ltrace
 
 `ltrace ./ltrace`で実行。適当に入力してみる。
 
@@ -338,13 +338,13 @@ if ($input -eq "FLAG{w0w_7h3_3mb3dd3d_vb4_1n_w0rd_4u70m471c4lly_3x3cu73d_7h3_p0w
 
 `ltrace -s 140 ./ltrace`に変えてみたら全部見えた。
 
-# Misc
+## Misc
 
-## binary
+### binary
 
 csvの中の行毎末尾の(0,1)をcybershefで料理。
 
-## dockerdive
+### dockerdive
 
 docker build -f .\Dockerfile -t dive .
 
@@ -352,9 +352,9 @@ docker build -f .\Dockerfile -t dive .
 
 `./solver`でsolverを実行。
 
-# Crypt
+## Crypt
 
-## fox
+### fox
 
 ```py
 flag = 19116989514623535769166210117786818367158332986915210065591753844573169066323884981321863605962664727709419615399694310104576887228581060509732286555123028133634836954522269304382229987197
