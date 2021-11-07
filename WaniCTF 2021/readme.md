@@ -99,6 +99,44 @@ flag 発見２：`Congratulations! Challenge 2 FLAG: ar3`
 
 flag 発見３：`Congratulations! Challenge 3 FLAG: http`
 
+`curl -XPOST  -H "Content-Type: application/json" -d '{"data":"hoge","fuga":null}}' https://post.web.wanictf.org/chal/4`
+
+```html
+<h1>Unexpected token h in JSON at position 1</h1>
+<h2>400</h2>
+<pre>SyntaxError: Unexpected token h in JSON at position 1
+    at JSON.parse (&lt;anonymous&gt;)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:89:19)
+    at /app/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+    at done (/app/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:412:35)
+    at endReadableNT (internal/streams/readable.js:1334:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)</pre>
+```
+
+なんでや。
+
+#### after time up
+
+Linuxでやり直すと成功。`C:\Windows\System32\curl.exe`ではダメらしい。
+
+```html
+<!-- debug: {"requestHeader":{"host":"post.web.wanictf.org","user-agent":"curl/7.74.0","content-length":"22","accept":"*/*","content-type":"application/json","x-forwarded-for":"x.x.x.x","x-forwarded-proto":"https","x-real-ip":"x.x.x.x","accept-encoding":"gzip"},"requestBody":{"hoge":1,"fuga":null}} -->
+    </div>
+```
+
+flag 発見４：`Congratulations! Challenge 4 FLAG: p0st`
+
+`curl -X POST https://post.web.wanictf.org/chal/5 -F data=@wani.png -H "Content-Type: multipart/form-data"`
+
+```html
+<!-- debug: {"requestHeader":{"host":"post.web.wanictf.org","user-agent":"curl/7.74.0","content-length":"135385","accept":"*/*","content-type":"multipart/form-data; boundary=------------------------6f4e2966649899a3","x-forwarded-for":"126.171.180.90","x-forwarded-proto":"https","x-real-ip":"126.171.180.90","accept-encoding":"gzip"},"requestBody":{}} -->
+```
+
+flag 発見５：`Congratulations! Challenge 5 FLAG: m@ster!`
+
 ## Rev
 
 ### pwsh
