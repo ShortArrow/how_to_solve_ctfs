@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: nginx
+    volumes:
+    - ./release.html:/usr/share/nginx/html/index.html
+    ports:
+    - "33369:80"
+    environment:
+    - NGINX_PORT=80
+    restart: always
