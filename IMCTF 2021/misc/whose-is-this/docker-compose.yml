@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  helhel:
+    build:
+      context: .
+    working_dir: /home/helhel
+    restart: always
+    ports:
+      - "55555:55555"
