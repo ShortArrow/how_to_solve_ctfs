@@ -87,3 +87,7 @@ R2 は最高のアストロメク・ドロイドだと思うかい？彼はC3に
 1. 実行して、`99`を入力したところででフラグが取れる。
 
     ![img4](./img/4.png)
+
+## 注意
+
+[.NET 6](https://dotnet.microsoft.com/en-us/download)がインストールされているWindows11が推奨解答環境です。
