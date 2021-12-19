@@ -1,0 +1,19 @@
+FROM node:16-alpine
+
+USER node
+WORKDIR /home/node/app
+
+ENV NODE_ENV=production
+
+COPY ./public /home/node/app/public
+COPY ./src /home/node/app/src
+COPY ./package.json /home/node/app/package.json
+
+RUN npm install
+RUN npm run build
+
+WORKDIR /home/node/app/build
+
+# For Debug
+EXPOSE 3000
+CMD [ "npm", "start" ]

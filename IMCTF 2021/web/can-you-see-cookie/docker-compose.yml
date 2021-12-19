@@ -1,0 +1,17 @@
+version: "3"
+services:
+  node:
+    build: .
+    volumes:
+      - build:/home/node/app/build
+    restart: always
+  nginx:
+    image: nginx
+    volumes:
+      - build:/var/www
+      - ./nginx/:/etc/nginx/conf.d/
+    ports:
+      - 31909:80
+    restart: always
+volumes:
+  build:
