@@ -10,7 +10,7 @@ misc?
 
 ## 難易度
 
-easy
+normal
 
 ## 内容
 
@@ -21,24 +21,9 @@ easy
 
 この世界には、どんなものでもExcelに変えてしまうという「神Excel師」なるものが存在するらしい。そいつは今夜、フラグが書かれた画像をExcelに変えてしまいやがった。なんてことだ！そこの君、なんとかして元に戻せないかな？
 
-## How to build
-
-1. inkscape を使って `flag.svg` を `300dpi` の画像 `flag.png` に変換
-1. `gen-csv-from-png.py` を使って`flag.png` を `flag.csv` に変換
-1. `flag.png` を削除
-1. Excel を使って `flag.csv` を `flag.xlsx` に変換
-1. 問題文にて公開するのは `flag.xlsx` のみとする
-
 ## フラグ
 
 `imctf{google_pixel_six_pro}`
-
-## テスト
-
-フラグ画像の断片を使ってテストを実施。
-`./src/.*_light\..*`というファイル名でテスト用データをまとめている。
-
-![フラグ断片](src\flag_light.png)
 
 ## Write Up
 
