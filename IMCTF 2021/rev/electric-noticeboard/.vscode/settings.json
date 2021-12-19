@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.includePath": [
+        // Install Directory of Arduino IDE
+        "C:\\Program Files (x86)\\Arduino\\libraries",
+        "C:\\Program Files (x86)\\Arduino\\tools",
+        "C:\\Program Files (x86)\\Arduino\\hardware"
+    ]
+}
