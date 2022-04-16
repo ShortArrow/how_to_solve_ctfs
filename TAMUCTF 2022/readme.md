@@ -55,3 +55,4 @@ Note: The Social Security Number in question is a United States Social Security 
 1. `cat pdf.hash` ->>
 1. deleted file location and colon `$pdf$2*3*128*-4*1*16*b723cc6032e756aa478f5001ec79c0e5*32*5c89613c1881c3f9e51c407e042355d90122456a91bae5134273a6db134c87c4*32*9b08f608843a9a833ff15833e443ce5cb230bd0f49b7d6fa0612328f661dc7ba`
 1. `hashcat -m 10500 -a 3 -w 4 -D 1 -S pdf.hash -1 ?d ?1?1?1?1?1?1?1?1?1`
+1. `hashcat pdf.hash --show -m 10500`
