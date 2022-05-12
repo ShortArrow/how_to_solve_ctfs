@@ -2,6 +2,8 @@
 
 ## misc
 
+<hr class="rounded">
+
 ### F
 
 80
@@ -18,6 +20,8 @@
 
 <https://copy.sh/brainfuck/>
 
+<hr class="rounded">
+
 ### Redacted
 
 150
@@ -31,6 +35,8 @@
 #### solve
 
 google docs で開くと画像が抽出できる
+
+<hr class="rounded">
 
 ### magic_number
 
@@ -82,6 +88,8 @@ post.png
 - [ff d8 ff e0] = JPGのマジックナンバー
 
 であることが分かる。
+
+<hr class="rounded">
 
 ### ransom_note
 
