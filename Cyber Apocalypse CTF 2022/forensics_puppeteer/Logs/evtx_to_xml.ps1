@@ -1,0 +1,1 @@
+(Get-WinEvent -Path ./* ).ToXML()>>get.xml
